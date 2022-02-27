@@ -8,6 +8,7 @@ public class Main {
                 case "v16"-> System.out.println(V16.func(Double.parseDouble(args[1]), Double.parseDouble(args[2]), Double.parseDouble(args[3]), Double.parseDouble(args[4]), Double.parseDouble(args[5])));
 =======
                 case "v2"-> System.out.println(v2.func(Double.parseDouble(args[1])));
+                case "v14"-> System.out.println(V14.v14(Double.parseDouble(args[1])));
 		case "v7" -> System.out.println(V7.func(Double.parseDouble(args[1])));
 >>>>>>> 0cfa60545d020bc517d8753e1d724fd2b5fa3ebe
                 case "exit" -> {
