@@ -10,6 +10,7 @@ public class Main {
 		        case "v7" -> System.out.println(V7.func(Double.parseDouble(args[1])));
                 case "v13"->System.out.println(V13.func(Double.parseDouble(args[1])));
                 case "v6" -> System.out.println(V6.function(Double.parseDouble(args[1])));
+                case "V10" -> System.out.println(V10.v10(Double.parseDouble(args[1]), (Double.parseDouble(args[2])), (Double.parseDouble(args[3]))));
                 case "v9"-> System.out.println(V9.funcV9(Double.parseDouble(args[1]), Double.parseDouble(args[2]), Double.parseDouble(args[3])) );
                 case "exit" -> {
                     System.out.println("Done");
