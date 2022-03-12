@@ -6,7 +6,7 @@ public class Main {
                 case "v2"-> System.out.println(v2.func(Double.parseDouble(args[1]), Double.parseDouble(args[2]), Double.parseDouble(args[3]), Double.parseDouble(args[4])));
                 case "v16"-> System.out.println(V16.func(Double.parseDouble(args[1]), Double.parseDouble(args[2]), Double.parseDouble(args[3]), Double.parseDouble(args[4]), Double.parseDouble(args[5])));
 
-                case "v7" -> System.out.println(V7.func(Double.parseDouble(args[1])));
+                //case "v7" -> System.out.println(V7.func(Double.parseDouble(args[1]))); что-то тут неправильно
                 //case "v2"-> System.out.println(v2.func(Double.parseDouble(args[1]))); что-то неправильно тут
                 case "v14"->  System.out.println(V14.v14(Double.parseDouble(args[1])));
 		        case "v7" -> System.out.println(V7.func(Double.parseDouble(args[1])));
@@ -16,6 +16,7 @@ public class Main {
                 case "v9"-> System.out.println(V9.funcV9(Double.parseDouble(args[1]), Double.parseDouble(args[2]), Double.parseDouble(args[3])) );
                 case "v8" -> System.out.println(V8.func8(Double.parseDouble(args[1]),Double.parseDouble(args[2]),Double.parseDouble(args[3]),Double.parseDouble(args[4])));
                 case "v4"-> System.out.println(V4.v4(Double.parseDouble(args[1]), (Double.parseDouble(args[2]))));
+                case "v11"-> System.out.println(V11.v11(Double.parseDouble(args[1]), (Double.parseDouble(args[2]))));
                 case "exit" -> {
                     System.out.println("Done");
                     return;
