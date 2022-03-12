@@ -28,8 +28,8 @@ public class Server {
             //------
             String[] parts = request.split(" ");
             //------
-            if (parts[0] == "v2" || parts[0] == "V2") {
-                System.out.println("Получено: Вариант = " + parts[0] + "x = " + parts[1] + " y= " + parts[2] + " a= " + parts[3] + " w=" + parts[4] + "\n");
+           // if (parts[0] == "v2" && parts[0] == "V2") {
+                System.out.println("Получено: Вариант = " + parts[0] + " x = " + parts[1] + " y= " + parts[2] + " a= " + parts[3] + " w=" + parts[4] + "\n");
                 double x = Double.parseDouble(parts[1]);
                 double y = Double.parseDouble(parts[2]);
                 double a = Double.parseDouble(parts[3]);
@@ -46,7 +46,7 @@ public class Server {
                 writer.close();
                 reader.close();
                 clientSocket.close();
-            }
+            //}
         }
         //так как работа серва в цикле нам не нужно закрывать работу сервера
         //serverSocket.close();

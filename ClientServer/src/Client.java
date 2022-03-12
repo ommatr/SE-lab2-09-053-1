@@ -22,23 +22,14 @@ public class Client {
                         new OutputStreamWriter(clientSocket.getOutputStream()));
         System.out.println("введите вариант и 4 переменных: x,y,a,w");
         //----------Алгоритм ввода
-        Scanner scan = new Scanner(System.in).useDelimiter( "(\\b|\\B)" ) ;
-        String str = scan.toString();
-        while( scan.hasNext() ) {
-            String  c = scan.next();
-
-            if (c.equalsIgnoreCase("\r")) {
-                break;
-            }
-            else {
-                str += c;
-            }
-        }
-        
-        //----------------
-        
+        Scanner scan = new Scanner(System.in);
+        char variant = scan.next().charAt(1);
+        double x = scan.nextDouble();
+        double y = scan.nextDouble();
+        double a = scan.nextDouble();
+        double w = scan.nextDouble();
         // аналогичное отправление, что и на сервере
-        writer.write(str+"\n");
+        writer.write(variant + " " + x + " " + y + " " + a + " " + w + "\n");
         writer.flush();
         //Выводим то, что отправил сервер
         String response = reader.readLine();
